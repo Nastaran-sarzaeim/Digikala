@@ -82,7 +82,7 @@ function HeaderUp() {
       <div className={styles.upHeader}>
         <div className={styles.rightSideHeaderUp}>
           <div className={styles.logoDigikala}>
-            <img src="../public/images/logo.svg" />
+            <img src="../../Digikala/public/images/logo.svg" />
           </div>
           <div
             ref={containerSearchRef}
@@ -109,39 +109,39 @@ function HeaderUp() {
               </button>
               :
               <Link to='login' className={styles.btnLogin}>
-                {/* <i className="cube-action-sign-out" style={StyleForSignOutIcon}></i> */}
+                <i className="cube-action-sign-out"></i>
                 <p className={styles.titleLogin}>ورود | ثبت نام</p>
               </Link>
           }
           </div>
           <span className="line-right"></span>
-          <div className="container-add-products" onMouseOver={showDisplay} onMouseLeave={hideDisplay}>
-            <div className="container-btn-cart">
+          <div className={styles.containerAddProducts} onMouseOver={showDisplay} onMouseLeave={hideDisplay}>
+            <div className={styles.containerBtnCart}>
               <i className="cube-shop-cart-outline" style={StyleForCartIcon}></i>
-              <div className="quantity-number" style={{ display: totalQuantity !== 0 ? 'flex' : 'none' }}>{toFarsiNumber(totalQuantity)}</div>
+              <div className={styles.quantityNumber} style={{ display: totalQuantity !== 0 ? 'flex' : 'none' }}>{toFarsiNumber(totalQuantity)}</div>
             </div>
-            <div className="add-products" style={{ display: showDisplayNavbar && totalQuantity !== 0 ? 'block' : 'none' }}>
+            <div className={styles.addProducts} style={{ display: showDisplayNavbar && totalQuantity !== 0 ? 'block' : 'none' }}>
               {Object.values(cartProducts).map((product) => {
                 return (
-                  <div className="modal-show-products">
+                  <div className={styles.modalShowProducts}>
                     <div style={{ display: 'flex' }}>
-                      <img src={product.img} className="img-modal-products" />
+                      <img src={product.img} className={styles.imgModalProducts} />
                       <div>
-                        <p className="title-modal-products">{product.title}</p>
+                        <p className={styles.titleModalProducts}>{product.title}</p>
                       </div>
                     </div>
-                    <div className="container-bottom-products">
+                    <div className={styles.containerBottomProducts}>
                       <ButtonCart product={product} />
-                      <p className="price-modal-products">
+                      <p className={styles.priceModalProducts}>
                         {toFarsiNumber(addCommas(product.price * product.quantity))}
                       </p>
                     </div>
                   </div>
                 )
               })}
-              <div className="total-prices">
+              <div className={styles.totalPrices}>
                 <p>{toFarsiNumber(addCommas(totalPrice))} تومان</p>
-                <button className="btn-total-prices">ثبت سفارش</button>
+                <button className={styles.btnTotalPrices}>ثبت سفارش</button>
               </div>
             </div>
           </div>

@@ -1,0 +1,18 @@
+.btnCart {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.containerBtnAddToCart {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid #d5d5d5;
+    width: 100px;
+    justify-content: space-between;
+    padding: 0 8px;
+    box-sizing: border-box;
+    color: #d22c4e;
+}

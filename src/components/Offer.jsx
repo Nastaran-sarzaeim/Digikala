@@ -87,7 +87,7 @@ function Offer({ data }) {
                 <p className={styles.titleOffer}>{product.title_fa}</p>
                 <div className={styles.priceOffer}>
                   <div className={styles.persentOffer}>
-                    {toFarsiNumber(product.default_variant.price.discount_percent)}٪
+                    {toFarsiNumber(product.data_layer.dimension2)}٪
                   </div>
                   <p>
                     {toFarsiNumber(addCommas(product.default_variant.price.selling_price))}

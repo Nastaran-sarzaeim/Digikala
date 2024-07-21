@@ -47,7 +47,7 @@ function LoginPage() {
   return (
     <div className={styles.loginPage}>
       <div className={styles.containerLoginPage}>
-        <img src="../../public/images/logo.svg" className={styles.logoLogin} />
+        <img src="../../Digikala/public/images/logo.svg" className={styles.logoLogin} />
         <h3>ورود | ثبت‌نام</h3>
         <form className={styles.formLogin} onSubmit={submitForm}>
           <p>سلام !</p>

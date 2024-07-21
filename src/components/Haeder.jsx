@@ -8,7 +8,7 @@ function Header() {
     return (
         <>
             <header className={styles.header}>
-                <img className={styles.advertise} src="../../public/images/2e92fe027b295c400947fa9dad93dd1fc33dd1a0_1720880178.gif" alt="" />
+                <img className={styles.advertise} src="../../Digikala/public/images/2e92fe027b295c400947fa9dad93dd1fc33dd1a0_1720880178.gif" alt="" />
                 <HeaderUp />
                 <HeaderDown />
                 <MenuBottom />

@@ -94,20 +94,20 @@ function HeaderDown() {
                     );
                   })}
                 </div>
-                <div className="left-side-navbar-modal">
-                  <div className="title-navbar-item">همه محصولات {menu.length > 0 && menu[activeMenuItemIndex].title}</div>
-                  <div className="parent-navbar-item">
+                <div className={styles.leftSideNavbarModal}>
+                  <div className={styles.titleNavbarItem}>همه محصولات {menu.length > 0 && menu[activeMenuItemIndex].title}</div>
+                  <div className={styles.parentNavbarItem}>
                     {menu.length > 0 && menu[activeMenuItemIndex].children.map((child, index) => {
                       return (
-                        <div className="children-navbar-modal" key={child.id}>
-                          <div className="container-child-navbar">
-                            <p className="child-navbar">{child.title}</p>
+                        <div className={styles.childrenNavbarModal} key={child.id}>
+                          <div className={styles.containerChildNavbar}>
+                            <p className={styles.childNavbar}>{child.title}</p>
                             <i className="cube-nav-chevron-left" style={StyleForIcon}></i>
                           </div>
                           <div>
                             {child.children !== null && child.children.map((lastChild, index) => {
                               return (
-                                <p className="last-child-navbar" key={lastChild.id}>{lastChild.title}</p>
+                                <p className={styles.lastChildNavbar} key={lastChild.id}>{lastChild.title}</p>
                               )
                             })}
                           </div>

@@ -2,11 +2,11 @@ import styles from '../styles/footer.module.css'
 import '../../public/fonts/style.css'
 
 function Footer() {
-    const services = [{ title: 'اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس', img: '../../public/images/express-delivery.svg' },
-    { title: 'امکان پرداخت در محل', img: '../../public/images/cash-on-delivery.svg' },
-    { title: '۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ', img: '../../public/images/support.svg' },
-    { title: 'هفت روز ضمانت بازگشت کالا', img: '../../public/images/days-return.svg' },
-    { title: 'ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ', img: '../../public/images/original-products.svg' }]
+    const services = [{ title: 'اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس', img: '../../Digikala/public/images/express-delivery.svg' },
+    { title: 'امکان پرداخت در محل', img: '../../Digikala/public/images/cash-on-delivery.svg' },
+    { title: '۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ', img: '../../Digikala/public/images/support.svg' },
+    { title: 'هفت روز ضمانت بازگشت کالا', img: '../../Digikala/public/images/days-return.svg' },
+    { title: 'ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ', img: '../../Digikala/public/images/original-products.svg' }]
 
     const digikala = ['اتاق خبر دیجی‌کالا', 'فروش در دیجی‌کالا', 'فرصت‌های شغلی', 'گزارش تخلف در دیجی‌کالا', 'تماس با دیجی‌کالا', 'درباره دیجی‌کالا']
     const customerServices = ['پاسخ به پرسش‌های متداول', 'رویه‌های بازگرداندن کالا', 'شرایط استفاده', 'حریم خصوصی', 'گزارش باگ']
@@ -31,7 +31,7 @@ function Footer() {
                 <div className={styles.footerPartOne}>
                     <div className={styles.topPartOne}>
                         <div>
-                            <img src="../../public/images/digi.svg" className={styles.iconDigikalaFooter} />
+                            <img src="../../Digikala/public/images/digi.svg" className={styles.iconDigikalaFooter} />
                         </div>
                         <button className={styles.toTop}>
                             <a href="#top" className={styles.aToTop}>بازگشت به بالا</a>
@@ -128,10 +128,10 @@ function Footer() {
                     </div>
                     <div className={styles.containerENamad}>
                         <div>
-                            <img src="../../public/images/rezi.webp" className={styles.eNamad} />
+                            <img src="../../Digikala/public/images/rezi.webp" className={styles.eNamad} />
                         </div>
                         <div>
-                            <img src="../../public/images/Enamad.png" className={styles.eNamad} />
+                            <img src="../../Digikala/public/images/Enamad.png" className={styles.eNamad} />
                         </div>
                     </div>
                 </div>

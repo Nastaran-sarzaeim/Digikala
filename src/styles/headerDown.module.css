@@ -44,6 +44,7 @@
     font-size: 12px;
     margin: 10px 0;
     cursor: pointer;
+  padding-right: 8px;
 }
 
 .itemNavbar:hover {
@@ -52,7 +53,7 @@
 
 .titleNavbar {
     font-size: 10px;
-    padding-left: 12px;
+    padding:0 12px;
     color: #868686;
     cursor: pointer;
 }
@@ -94,6 +95,7 @@
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: #fff;
 }
 
 .containerNavbarModal {
