@@ -109,7 +109,7 @@ function HeaderUp() {
               </button>
               :
               <Link to='login' className={styles.btnLogin}>
-                <i className="cube-action-sign-out" style={StyleForSignOutIcon}></i>
+                {/* <i className="cube-action-sign-out" style={StyleForSignOutIcon}></i> */}
                 <p className={styles.titleLogin}>ورود | ثبت نام</p>
               </Link>
           }
