@@ -1,0 +1,160 @@
+.footerPartOne {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.topPartOne {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iconDigikalaFooter {
+    width: 114px;
+    height: 30px;
+}
+
+.toTop {
+    border: 1px solid #d5d5d5;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: transparent;
+    display: flex;
+}
+
+.aToTop {
+    text-decoration: none;
+    color: #d5d5d5;
+}
+
+.bottomPartOne {
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    color: #3f4064;
+}
+
+.footerPartTwo {
+    display: flex;
+    justify-content: center;
+    color: #3f4064;
+}
+
+.partTwo {
+    width: 270px;
+    height: 104px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.iconFooter {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+}
+
+.titleIconFooter {
+    font-size: 11px;
+    cursor: pointer;
+}
+.itemFooterPartthree{
+    color: #868686;
+    font-size: 12px;
+}
+.footerPartThree {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px;
+    font-size: 14px;
+    color: #3f4064;
+}
+
+.partThreeLeftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #3f4064;
+font-weight: bold;
+}
+
+.containerIconSocial {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email {
+    width: 195px;
+    height: 48px;
+    background-color: #f1f1f1;
+    border: none;
+    color: #d5d5d5;
+    outline: none;
+    border-radius: 8px;
+    padding-right: 10px;
+    margin-left: 10px;
+}
+
+.btnEmail {
+    width: 48px;
+    height: 48px;
+    color: #fff;
+    background-color: #d5d5d5;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.footerPartFive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 40px;
+}
+
+.titleDes {
+    font-size: x-large;
+    margin-bottom: 10px;
+    color: #81858b;
+}
+
+.des {
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    height: 90px;
+    color: #81858b;
+}
+
+.containerShowMore {
+    display: flex;
+    align-items: center;
+    color:cadetblue ;
+}
+
+.containerENamad {
+    display: flex;
+}
+
+.eNamad {
+    width: 109px;
+    height: 109px;
+    border-radius: 8px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.footerPartSix {
+    font-size: 10px;
+    text-align: center;
+    color: #868686;
+    margin: 32px 0;
+}
+
+@media (min-width: 100px) and (max-width: 1020px) {
+    .footerWithoutResponsive {
+        display: none;
+    }
+}

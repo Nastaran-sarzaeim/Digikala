@@ -1,0 +1,81 @@
+.footerResponsive {
+    margin: 20px;
+}
+
+.footerResponsivePartOne {
+    display: flex;
+    justify-content: center;
+}
+
+.btnFooterResponsive {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: cadetblue;
+    display: flex;
+    align-items: center;
+}
+
+.aToTop {
+    text-decoration: none;
+    color:#19bfd3;
+}
+.footerResponsivePartTwo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightSideFooterResponsive {
+    display: flex;
+    align-items: center;
+}
+.footerResponsivePartFour {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.titleDes {
+    font-weight: bold;
+}
+
+.des{
+    font-size: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-height: 25px;
+    height: 90px;
+}
+
+.logoFooter2 {
+    width: 44px;
+    height: 44px;
+}
+.titlePartOne {
+    margin-right: 14px;
+    font-size: 12px;
+}
+
+.btnPartOne {
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.btn2PartOne {
+    background-color: #000;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (min-width: 1020px) and (max-width: 2000px) {
+    .footerResponsive {
+        display: none;
+    }
+}

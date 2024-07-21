@@ -1,0 +1,73 @@
+.containerBestSellingProducts {
+    margin: 0 46px;
+    border: 1px solid #d5d5d5;
+    border-radius: 16px;
+    padding: 24px 0;
+}
+
+.topBestProduct {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.btnBestProduct {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: cadetblue;
+}
+
+.containerBtnBestProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottomBestProduct {
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.titleNumProduct {
+    display: flex;
+    width: 200px;
+    align-items: center;
+    margin: 0 20px;
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.imgProduct {
+    width: 86px;
+    height: 86px;
+}
+
+.titleProduct {
+    font-size: 10px;
+    margin-right: 8px;
+}
+
+.numberProduct {
+    color: #19bfd3;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+    .containerBestSellingProducts {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+    }
+}

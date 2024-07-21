@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "Iran sans";
+  src: url(https://www.digikala.com/_next/static/media/iranyekanwebmedium.2d4f96e5.woff)
+}
+
+* {
+  font-family: "Iran sans";
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: "Iran sans";
+  margin-bottom: 80px;
+}
+
+.pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  background-color: red;
+  font-size: 1.7em;
+  color: #fff;
+  border-radius: 50px;
+  position: fixed;
+  bottom: 32px;
+  right: 50px;
+  z-index: 5;
+}
+
+@media (min-width: 100px) and (max-width: 1020px) {
+  .pop-up {
+    display: none;
+  }
+}
+.none {
+  display: none;
+}
+
+
+/* ----------------header---------------- */
+
+
+.search-modal {
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 20;
+  display: none;
+}
+
+@media (min-width: 100px) and (max-width: 1020px) {
+  .bottom-search-focus {
+    width: 100%;
+  }
+}
+
+.block {
+  display: block;
+}
+
+.container-search-focus {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  width: 600px;
+  background-color: #fff;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  height: 362px;
+  position: absolute;
+  top: 44px;
+  right: 0;
+  z-index: 2;
+  display: none;
+}
+
+
+
+
+.line-right {
+  margin: 0 12px;
+  width: 1px;
+  height: 24px;
+  background-color: #d5d5d5;
+}
+
+.container-btn-cart {
+  position: relative;
+}
+
+.quantity-number {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background-color: #d22c4e;
+  position: absolute;
+  top: 16px;
+  display: none;
+  font-size: 8px;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-add-products {
+  position: relative;
+  z-index: 2;
+}
+
+.modal-show-products {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.img-modal-products {
+  width: 100px;
+  height: 100px;
+}
+
+.btn-cart {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container-btn-add-to-cart {
+  display: flex;
+  height: 32px;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid #d5d5d5;
+  width: 100px;
+  justify-content: space-between;
+  padding: 0 8px;
+  box-sizing: border-box;
+  color: #d22c4e;
+}
+
+.container-bottom-products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+.title-modal-products {
+  font-size: 12px;
+}
+
+.price-modal-products {
+  font-size: 12px;
+  display: flex;
+}
+
+.total-prices {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  font-size: 12px;
+  background-color: #fff;
+  justify-content: space-between;
+  margin: 0;
+  padding: 10px;
+}
+
+.btn-total-prices {
+  background-color: #d22c4e;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  width: 100px;
+}
+
+.add-products {
+  width: 300px;
+  overflow: scroll;
+  height: 50vh;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  ;
+  padding: 20px 20px 0 20px;
+}
+
+.down-header {
+  display: flex;
+  height: 40px;
+  padding: 0 16px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fff;
+  top: 100px;
+  position: sticky;
+}
+
+.right-side-header-down {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  height: 36px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+
+.item-navbar:hover {
+  border-bottom: 2px solid red;
+}
+
+.title-navbar-kala {
+  font-weight: bold;
+  font-size: 12px;
+  margin: 10px 0;
+  cursor: pointer;
+  padding-right: 8px;
+}
+
+@media (min-width: 100px) and (max-width: 1020px) {
+  .down-header {
+    display: none;
+  }
+
+  .container-login {
+    display: none;
+  }
+
+  .container-search {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/*  -------------------grouping categories-------------------  */
+.grouping-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.group-category-title {
+  font-size: 1.5rem;
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.group-category {
+  width: 140px;
+  height: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.group-categories {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 0 20px;
+  justify-content: center;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  user-select: none;
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+  .group-categories {
+    margin: 0;
+    gap: 20px 60px;
+  }
+
+  .group-categories {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+.category-img {
+  width: 90px;
+  height: 90px;
+  margin: 0 20px;
+
+}
+
+.category-title {
+  width: 100px;
+  height: 52px;
+  font-size: 12px;
+  text-align: center;
+}

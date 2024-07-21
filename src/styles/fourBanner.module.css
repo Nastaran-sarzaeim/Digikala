@@ -1,0 +1,19 @@
+.box {
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.contanierFourBox {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 20px;
+    margin: 20px;
+}
+
+@media (min-width: 100px) and (max-width: 1000px) {
+    .contanierFourBox {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
