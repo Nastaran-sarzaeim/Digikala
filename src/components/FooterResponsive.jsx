@@ -1,5 +1,5 @@
 import styles from '../styles/footerResponsive.module.css'
-
+import logo from '../assets/images/footerlogo2.webp'
 
 function FooterResponsive() {
   const services = ['با دیجی کالا', 'خدمات مشتریان', 'راهنمای خرید از دیجی‌کالا', 'شرکای تجاری']
@@ -35,7 +35,7 @@ function FooterResponsive() {
         <hr />
         <div className={styles.footerResponsivePartTwo}>
           <div className={styles.rightSideFooterResponsive}>
-            <img src="../../Digikala/public/images/footerlogo2.webp" className={styles.logoFooter2} />
+            <img src={logo} className={styles.logoFooter2} />
             <div className={styles.titlePartOne}>
               <p>تجربه خرید بهتر در</p>
               <p style={{ fontWeight: "bold" }}>اپلیکیشن دیجی‌کالا</p>

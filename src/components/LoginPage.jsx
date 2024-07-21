@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
 import { userLoginSuccess } from "../store/userSlice";
 import styles from '../styles/loginPage.module.css'
-
+import logo from '../assets/images/logo.svg'
 
 function LoginPage() {
   const dispatch = useDispatch();
@@ -47,7 +47,7 @@ function LoginPage() {
   return (
     <div className={styles.loginPage}>
       <div className={styles.containerLoginPage}>
-        <img src="../../Digikala/public/images/logo.svg" className={styles.logoLogin} />
+        <img src={logo} className={styles.logoLogin} />
         <h3>ورود | ثبت‌نام</h3>
         <form className={styles.formLogin} onSubmit={submitForm}>
           <p>سلام !</p>

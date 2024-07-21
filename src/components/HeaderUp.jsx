@@ -8,6 +8,7 @@ import { addCommas } from "../utils/addCommas";
 import { toFarsiNumber } from "../utils/toFa";
 import useLockBodyScroll from "../hooks/useLockBodyScroll";
 import styles from '../styles/headerUp.module.css'
+import logo from '../assets/images/logo.svg'
 
 
 function HeaderUp() {
@@ -82,7 +83,7 @@ function HeaderUp() {
       <div className={styles.upHeader}>
         <div className={styles.rightSideHeaderUp}>
           <div className={styles.logoDigikala}>
-            <img src="../../Digikala/public/images/logo.svg" />
+            <img src={logo} />
           </div>
           <div
             ref={containerSearchRef}

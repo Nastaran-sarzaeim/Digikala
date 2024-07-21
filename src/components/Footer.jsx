@@ -1,12 +1,20 @@
 import styles from '../styles/footer.module.css'
 import '../../public/fonts/style.css'
+import serviseImg1 from '../assets/images/express-delivery.svg'
+import serviseImg2 from '../assets/images/cash-on-delivery.svg'
+import serviseImg3 from '../assets/images/support.svg'
+import serviseImg4 from '../assets/images/days-return.svg'
+import serviseImg5 from '../assets/images/original-products.svg'
+import eNamad1 from '../assets/images/rezi.webp'
+import eNamad2 from '../assets/images/Enamad.png'
+import logo from '../assets/images/digi.svg'
 
 function Footer() {
-    const services = [{ title: 'اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس', img: '../../Digikala/public/images/express-delivery.svg' },
-    { title: 'امکان پرداخت در محل', img: '../../Digikala/public/images/cash-on-delivery.svg' },
-    { title: '۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ', img: '../../Digikala/public/images/support.svg' },
-    { title: 'هفت روز ضمانت بازگشت کالا', img: '../../Digikala/public/images/days-return.svg' },
-    { title: 'ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ', img: '../../Digikala/public/images/original-products.svg' }]
+    const services = [{ title: 'اﻣﮑﺎن ﺗﺤﻮﯾﻞ اﮐﺴﭙﺮس', img: serviseImg1 },
+    { title: 'امکان پرداخت در محل', img: serviseImg2 },
+    { title: '۷ روز ﻫﻔﺘﻪ، ۲۴ ﺳﺎﻋﺘﻪ', img: serviseImg3 },
+    { title: 'هفت روز ضمانت بازگشت کالا', img: serviseImg4 },
+    { title: 'ﺿﻤﺎﻧﺖ اﺻﻞ ﺑﻮدن ﮐﺎﻟﺎ', img: serviseImg5 }]
 
     const digikala = ['اتاق خبر دیجی‌کالا', 'فروش در دیجی‌کالا', 'فرصت‌های شغلی', 'گزارش تخلف در دیجی‌کالا', 'تماس با دیجی‌کالا', 'درباره دیجی‌کالا']
     const customerServices = ['پاسخ به پرسش‌های متداول', 'رویه‌های بازگرداندن کالا', 'شرایط استفاده', 'حریم خصوصی', 'گزارش باگ']
@@ -31,7 +39,7 @@ function Footer() {
                 <div className={styles.footerPartOne}>
                     <div className={styles.topPartOne}>
                         <div>
-                            <img src="../../Digikala/public/images/digi.svg" className={styles.iconDigikalaFooter} />
+                            <img src={logo} className={styles.iconDigikalaFooter} />
                         </div>
                         <button className={styles.toTop}>
                             <a href="#top" className={styles.aToTop}>بازگشت به بالا</a>
@@ -128,10 +136,10 @@ function Footer() {
                     </div>
                     <div className={styles.containerENamad}>
                         <div>
-                            <img src="../../Digikala/public/images/rezi.webp" className={styles.eNamad} />
+                            <img src={eNamad1} className={styles.eNamad} />
                         </div>
                         <div>
-                            <img src="../../Digikala/public/images/Enamad.png" className={styles.eNamad} />
+                            <img src={eNamad2} className={styles.eNamad} />
                         </div>
                     </div>
                 </div>

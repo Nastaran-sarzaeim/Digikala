@@ -89,14 +89,16 @@ function Offer({ data }) {
                   <div className={styles.persentOffer}>
                     {toFarsiNumber(product.data_layer.dimension2)}٪
                   </div>
-                  <p>
+                  {product.default_variant.price && <p>
                     {toFarsiNumber(addCommas(product.default_variant.price.selling_price))}
                     <span className={styles.toman}>تومان</span>
-                  </p>
+                  </p>}
+                  
                 </div>
-                <p className={styles.offOffer}>
+                {product.default_variant.price && <p className={styles.offOffer}>
                   {toFarsiNumber(addCommas(product.default_variant.price.rrp_price))}
-                </p>
+                </p>}
+                
                 {
                   cartProducts[product.id] ?
                     <ButtonCart product={cartProducts[product.id]} /> :
