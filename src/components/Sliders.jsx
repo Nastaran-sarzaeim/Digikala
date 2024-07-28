@@ -15,14 +15,13 @@ function Sliders({ data }) {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      if (slideIndex >= data.length) {
-        setSlideIndex(1);
-      } else {
-        setSlideIndex(slideIndex + 1);
-      }
+    const timer = setTimeout(() => {
+      setSlideIndex((prevIndex) => (prevIndex >= data.length ? 1 : prevIndex + 1));
     }, 5000);
-  }, [slideIndex]);
+
+    return () => clearTimeout(timer);
+  }, [slideIndex, data.length]);
+  
   const StyleForIcon = {
     fontSize: '20px',
     color: '#868686'
