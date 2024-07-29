@@ -36,7 +36,7 @@ function Widget({ widget }) {
 function HomePage() {
   const [widgets, setWidgets] = useState([]);
   useEffect(() => {
-  const url = 'https://api.digikala.com/v2/';
+  const url = '/api/v2/';
     const abortController = new AbortController();
     const signal = abortController.signal;
     async function fetchBrand() {
