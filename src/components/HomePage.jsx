@@ -36,11 +36,11 @@ function Widget({ widget }) {
 function HomePage() {
   const [widgets, setWidgets] = useState([]);
   useEffect(() => {
-    const url = "https://api.digikala.com/v2/";
+    const url = "http://localhost:3001/api2";
     const abortController = new AbortController();
     const signal = abortController.signal;
     async function fetchBrand() {
-      const response = await fetch(url, { signal });
+      const response = await fetch(url, { mode:'cors' , signal  });
       const data = await response.json();
       setWidgets(data.data.widgets);
     }
