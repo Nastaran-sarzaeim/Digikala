@@ -7,6 +7,7 @@
     display: none;
     user-select: none;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .containerSliders:hover .nextSlider,
