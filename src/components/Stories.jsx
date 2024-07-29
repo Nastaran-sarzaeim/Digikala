@@ -7,7 +7,7 @@ function Stories() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-    const url = "http://localhost:3001/api3";
+  const url = 'https://api.digikala.com/v1/magnet/home-page/';
     const abortController = new AbortController();
     const signal = abortController.signal;
     async function stories() {

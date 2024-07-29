@@ -11,8 +11,7 @@ function HeaderDown() {
   useLockBodyScroll(showDisplayNavbar)
 
   useEffect(() => {
-    const url =
-      "http://localhost:3001/api1";
+  const url = 'https://api.digikala.com/v1/dictionaries/?types%5B0%5D=states&types%5B1%5D=cities&types%5B2%5D=user_jobs&types%5B3%5D=mega_menu&types%5B4%5D=universal&types%5B5%5D=category_tree&types%5B6%5D=districts&types%5B7%5D=seo_content&types%5B8%5D=superapp_services&hashes%5B0%5D=1d037800a9fa9936893f7fde3dbed12d&hashes%5B1%5D=bdce19da9880f85850eb707573eeb57c&hashes%5B2%5D=4ee2c70608fae0b62a7aefe875e714e1&hashes%5B3%5D=&hashes%5B4%5D=94fbeef374349e9c40b4943e0bc3f7c5&hashes%5B5%5D=90c1cc68f84c58fd3c14b6cc885105d3&hashes%5B6%5D=359fcfd07ce7ca2db46e242cfa56db22&hashes%5B7%5D=fb766fb463a92eee243729bf0eb0e962&hashes%5B8%5D=1ef2eab7c7443015dfafa133924ff517';
     const abortController = new AbortController();
     const signal = abortController.signal;
     async function fetchNavbar() {
