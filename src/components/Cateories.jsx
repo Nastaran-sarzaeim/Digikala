@@ -35,7 +35,7 @@ function Categories({ data }) {
             <div className={styles.containerCategory} key={category.id}>
               <div>
                 <img
-                  src={category.icon.webp_url[0]}
+                  src={category.icon}
                   className={styles.category}
                 />
               </div>
@@ -61,7 +61,7 @@ function Categories({ data }) {
                     <div className={styles.containerModalCategory} key={category.id}>
                       <div>
                         <img
-                          src={category.icon.webp_url[0]}
+                          src={category.icon}
                           className={styles.categoryModal}
                         />
                       </div>

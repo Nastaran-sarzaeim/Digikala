@@ -2,24 +2,8 @@ import { useEffect, useState, useRef } from "react";
 import ScrollDraggable from "./ScrollDraggable";
 import styles from '../styles/stories.module.css'
  
-function Stories() {
-  const [data, setData] = useState([]);
+function Stories({data}) {
   const containerRef = useRef(null);
-
-  useEffect(() => {
-  const url = '/api/v1/magnet/home-page/';
-    const abortController = new AbortController();
-    const signal = abortController.signal;
-    async function stories() {
-      const response = await fetch(url, { mode: 'cors'  ,signal});
-      const data = await response.json();
-      setData(data.data.posts);
-    }
-    stories();
-    return () => {
-      abortController.abort()
-    }
-  }, []);
 
   return (
     <>
@@ -30,7 +14,7 @@ function Stories() {
               return (
                 <div className={styles.containerStory} key={d.id}>
                   <div className={styles.story}>
-                    <img className={styles.imgStori} src={d.author.photo} />
+                    <img className={styles.imgStori} src={d.photo} />
                   </div>
                   <p className={styles.titleStory}>{d.title}</p>
                 </div>

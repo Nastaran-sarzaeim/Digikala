@@ -10,7 +10,7 @@ function Brands({ data }) {
         <h3 className={styles.favoriteBrands}>محبوب ترین برندها</h3>
         <ScrollDraggable className={styles.brands} ref={containerRef} next={styles.nextBrand} prev={styles.prevBrand}>
           {data.brands.map((brand) => (
-            <img src={brand.logo.url} key={brand.id} className={styles.brand} />
+            <img src={brand.logo} key={brand.id} className={styles.brand} />
           ))}
         </ScrollDraggable>
       </div>

@@ -37,7 +37,7 @@ function Offer({ data }) {
       [product.id]: product,
     }))
     const price = product.default_variant.price.selling_price
-    const img = product.images.main.url[0]
+    const img = product.images
     const { id, title_fa } = product
     dispatch(addToCart({ id, title: title_fa, price, img }))
   }
@@ -48,10 +48,6 @@ function Offer({ data }) {
   };
   return (
     <>
-      <svg style={{ display: 'none' }}>
-        <symbol id="cartOff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M20 4h2V2h-3a1 1 0 00-1 1v1H3a1 1 0 00-.995 1.1l1 10A1 1 0 004 16h15a1 1 0 001-1V4zm-2 17a2 2 0 110-4 2 2 0 010 4zM5 21a2 2 0 110-4 2 2 0 010 4zm13-7V6H4.105l.8 8H18z" clip-rule="evenodd"></path></symbol>
-        <symbol id="chevronLeft" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11.414 12l4.293 4.293-1.414 1.414-5-5a1 1 0 010-1.414l5-5 1.414 1.414L11.414 12z"></path></symbol>
-      </svg>
       <div className={styles.offers} >
         <ScrollDraggable ref={containerRef} className={styles.containerOffer} next={styles.nextOffer} prev={styles.prevOffer}>
           <div className={styles.offerAmazing}>
@@ -80,7 +76,7 @@ function Offer({ data }) {
               <div className={styles.offer} key={product.id}>
                 <div>
                   <img
-                    src={product.images.main.url[0]}
+                    src={product.images}
                     className={styles.imgOffer}
                   />
                 </div>
