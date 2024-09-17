@@ -46,7 +46,8 @@ function Widget({ widget }) {
 function HomePage() {
   const [widgets, setWidgets] = useState([]);
   useEffect(() => {
-    const url = 'https://run.mocky.io/v3/7af3ae4a-97ce-4e44-90bb-24d60e34997e'
+    const url = 'https://run.mocky.io/v3/a49bd1ca-204a-433e-9082-75456213d248'
+    // const url = 'https://run.mocky.io/v3/7af3ae4a-97ce-4e44-90bb-24d60e34997e'
     const abortController = new AbortController();
     const signal = abortController.signal;
     async function fetchBrand() {
