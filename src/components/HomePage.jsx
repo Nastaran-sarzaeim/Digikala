@@ -13,6 +13,7 @@ import FooterResponsive from "./FooterResponsive";
 import Categories from "./Cateories";
 import FourBanner from "./FourBanner";
 import TwoBanner from "./TwoBanner";
+// import '../data.json'
 
 function Widget({ widget }) {
   if (widget.type == "mega-menu") return <Header data={widget.data} />;
@@ -47,7 +48,7 @@ function HomePage() {
   const [widgets, setWidgets] = useState([]);
   useEffect(() => {
     // const url = 'https://run.mocky.io/v3/a49bd1ca-204a-433e-9082-75456213d248'
-    const url = 'data.json'
+    const url = '../Digikala/public/data.json'
     const abortController = new AbortController();
     const signal = abortController.signal;
     async function fetchBrand() {
