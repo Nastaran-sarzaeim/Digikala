@@ -13,7 +13,6 @@ import FooterResponsive from "./FooterResponsive";
 import Categories from "./Cateories";
 import FourBanner from "./FourBanner";
 import TwoBanner from "./TwoBanner";
-// import '../data.json'
 
 function Widget({ widget }) {
   if (widget.type == "mega-menu") return <Header data={widget.data} />;

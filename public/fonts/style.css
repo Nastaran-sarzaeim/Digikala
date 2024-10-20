@@ -2,7 +2,7 @@
   font-family: 'cube';
   src:  url('./cube.eot?su2vyp');
   src:  url('./cube.eot?su2vyp#iefix') format('embedded-opentype'),
-    url('./cube.ttf?su2vyp') format('truetype'),
+    /* url('./cube.ttf?su2vyp') format('truetype'), */
     url('./cube.woff?su2vyp') format('woff'),
     url('./cube.svg?su2vyp#cube') format('svg');
   font-weight: normal;
