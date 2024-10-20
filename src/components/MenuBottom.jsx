@@ -3,8 +3,8 @@ import styles from '../styles/menuBottom.module.css'
 
 function MenuBottom() {
     const items = [{ name: 'خانه', icon: 'cube-action-home' },
-    { name: 'دسته بندی', icon: 'cube-cloud-status-outline' },
-    { name: 'سبد خرید', icon: 'cube-cat-all' },
+    { name: 'دسته بندی', icon: 'cube-cat-all' },
+    { name: 'سبد خرید', icon: 'cube-shop-cart-outline' },
     { name: 'دیجی کالای من', icon: 'cube-action-profile-outline' }
     ]
     const StyleForIcon = {

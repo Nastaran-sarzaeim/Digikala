@@ -47,8 +47,8 @@ function Widget({ widget }) {
 function HomePage() {
   const [widgets, setWidgets] = useState([]);
   useEffect(() => {
-    // const url = 'https://run.mocky.io/v3/a49bd1ca-204a-433e-9082-75456213d248'
-    const url = '../Digikala/public/data.json'
+    const url = 'https://run.mocky.io/v3/1f6facaa-7ff0-4ec6-be21-0f084fba3ffa'
+    // const url = '../Digikala/public/data.json'
     const abortController = new AbortController();
     const signal = abortController.signal;
     async function fetchBrand() {
@@ -70,6 +70,7 @@ function HomePage() {
       <div className="pop-up">
         <i className="cube-comm-support" style={styles}></i>
       </div>
+      {/* <div><p>اگه صفحه باز نشد احتمالا url از بین رفته!!</p></div> */}
       {widgets.map((widget, index) => (
         <Widget key={index} widget={widget} />
       ))}
