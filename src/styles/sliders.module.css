@@ -8,6 +8,7 @@
     user-select: none;
     object-fit: cover;
     overflow: hidden;
+    width: 100%;
 }
 
 .containerSliders:hover .nextSlider,

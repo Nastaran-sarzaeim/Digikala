@@ -7,7 +7,7 @@
 
 .containerStories {
   overflow-x: auto;
-  width: 1900px;
+  width: 100%;
   white-space: nowrap;
   overflow-y: hidden;
   user-select: none;
