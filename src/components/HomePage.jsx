@@ -46,7 +46,7 @@ function Widget({ widget }) {
 function HomePage() {
   const [widgets, setWidgets] = useState([]);
   useEffect(() => {
-    const url = 'https://run.mocky.io/v3/658ddac0-e2cc-436b-84cb-98134fba5a02'
+    const url = 'https://run.mocky.io/v3/1e5c67ad-39f4-4060-820a-7a44d2271b0e'
     // const url = '../Digikala/public/data.json'
     const abortController = new AbortController();
     const signal = abortController.signal;
